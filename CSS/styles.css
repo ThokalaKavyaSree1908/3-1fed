@@ -1,0 +1,29 @@
+body{
+    width: 50%;
+    margin: 0 auto;
+    background-color: yellowgreen;
+}
+#container-1, #container-2{
+    display: inline-block;
+    width: 320px;
+    height: 320px;
+    border: 0.2em solid black;
+    margin: 50px 10px;
+    background-color:crimson;
+    border-radius: 10px;
+}
+#image:hover{
+    border: 0.4em dashed rgb(238, 138, 138)) !important;
+}
+#image{
+    background: url('https://source.unsplash.com/random/300x300');
+    
+    position: relative;
+    height: 300px;
+    width:300px;
+    top:5px;
+    left:5px;
+    border:5px solid rgb(182, 138, 238);
+    border-radius: 5px;
+    cursor: pointer;
+}
