@@ -3,9 +3,9 @@
 }
 .mouth{
     fill:none;
-    stroke:#000;
-    stroke-width: 6px;
-    stroke-linecap: round;
+    stroke:black;
+    stroke-width: 7px;
+    stroke-linecap: rectangle;
 }
 .left-eyebrow{
     transform: rotate(80deg);
@@ -15,7 +15,7 @@
 .right-eyebrow{
     transform: rotate(100deg);
     transform-origin:  156px 82px;
-    transition: all .5s linear;
+    transition: all  .5s linear;
 }
 .smiley hover  .left-eyebrow{
     transform: rotate(100deg);
