@@ -1,0 +1,29 @@
+<<<<<<< HEAD
+h1{
+    color:blue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+   background-color: dashed azure;
+  width: 300px;
+  border: 15px  solid grey;
+  padding: 20px;
+  margin: 30px;
+  border-color: black;
+  
+}
+label{
+    color: blue;
+}
+button{
+  background-color:blue; 
+  color: white;
+  padding: 10px 12px;
+  text-align: center;
+  font-size: 12px;
+  
+=======
+*tr{
+    background:crimson;
+>>>>>>> d39fd3d6ef360c78b48b88f184a3414645005e56
+}
