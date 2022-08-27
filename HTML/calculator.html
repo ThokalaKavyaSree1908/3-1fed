@@ -1,41 +1,51 @@
 <html>
     <head>
-        <title>Calculator</title>
-        <link href="../CSS/index.css"
-        
+        <title>calculator</title>
+        <link href="../CSS/cal.css" rel="stylesheet">
+        <script src="../JAVASCRIPT/cal.js"></script>
     </head>
-    <body bgcolor="pink">
-        <h1 align="center">Calculator</h1>
-        
-        <table align="center">
-            <center>
-                <input type="text" placeholder="enter a number"/>
-            </center>
-            <tr id="main">
-                  <td ><input type="button" value="1"></td>
-                   <td><input type="button" value="2"></td>
-                   <td><input type="button" value="3"></td>
-                   <td> <input type="submit" value="+"></td>
+    <body>
+        <table border="1" class="tab">
+            <tr>
+               <td colspan="4"><input type="text"  class="b" id="result"></td>
             </tr>
             <tr>
-                    <td><input type="button" value="4"></td>
-                    <td><input type="button" value="5"></td>
-                    <td><input type="button" value="6"></td>
-                    <td><input type="submit" value="-"></td>
+                <td><input type="button" value="(" onclick="display('(')"></td>
+                <td><input type="button" value="CE" onclick="del()"></td>
+                <td><input type="button" value=")" onclick="display(')')"></td>
+                <td><input type="button" value="C" onclick="clearScreen()" id="btn"</td>                
             </tr>
             <tr>
-                    <td><input type="button" value="7"></td>
-                     <td><input type="button" value="8"></td>
-                     <td><input type="button" value="9"></td>
-                     <td><input type="submit" value="*"></td>
+                <td><input type="button" value="1" onclick="display('1')"></td>
+                <td><input type="button" value="2" onclick="display('2')"/></td>
+                <td><input type="button" value="3" onclick="display('3')"></td>
+                <td><input type="button" value="+" onclick="display('+')"></td>               
             </tr>
+            
             <tr>
-                   <td><input type="submit" value="c"></td> 
-                   <td><input type="submit" value="0"></td>
-                   <td><input type="submit" value="."></td>
-                   <td><input type="submit" value="/"></td>
-
+                <td><input type="button" value="4" onclick="display('4')"></td>
+                <td><input type="button" value="5" onclick="display('5')"></td>
+                <td><input type="button" value="6" onclick="display('6')"></td>
+                <td><input type="button" value="-" onclick="display('-')"></td>                 
             </tr>
+            
+            <tr>
+                <td><input type="button" value="7" onclick="display('7')"></td>
+                <td><input type="button" value="8" onclick="display('8')"></td>
+                <td><input type="button" value="9" onclick="display('9')"></td>
+                <td><input type="button" value="*" onclick="display('*')"></td>                 
+            </tr>
+            
+            <tr>
+                <td><input type="button" value="." onclick="display('.')"></td>
+                <td><input type="button" value="0" onclick="display('0')"></td>
+                <td><input type="button" value="=" onclick="calculate()"></td>
+                <td><input type="button" value="+" id="btn1" onclick="display('+')"></td>
+            </tr>
+            
+            
+            
         </table>
+      
     </body>
 </html>
